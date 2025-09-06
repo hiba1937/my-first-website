@@ -1,78 +1,75 @@
 body{
-
-    background-image: radial-gradient(circle, rgba(217, 2, 206, 0.984) 0%, rgb(20, 173, 155) 100%);
+display: flex;
+justify-content: center;
+align-items: center;
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
 height: 100vh;
 width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-
-}
-.username input{
-font-weight: 1em;
-font-size: 1.2em;
-padding: 4px;
-border-radius: 20px;
-}
-.password input{
-    font-weight: 1em;
-    font-size: 1.2em;
-    padding: 4px;
-    border-radius: 20px;
-    margin-top: 10px;
-    }
-button{
-    font-weight: 1em;   
-    font-size: 1.2em;
-      padding: 4px;
-      border-radius: 20px;
-      width:250px;
-        cursor: pointer;
-background-color: rgba(230, 82, 223, 0.984);
-margin-top: 10px;
-}
-button:hover{
-    background-color: rgba(255, 0, 255, 0.984);
-    color: white;
-    transition: 0.3s;
-}
-.checkbox input{
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-.checkbox label{
-    font-size: 1.2em;
-    font-weight: 500;
-    cursor: pointer;
+background-image: radial-gradient(circle, #09ad6e, #2a5298);
 }
 .form{
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(8.5px);
-    -webkit-backdrop-filter: blur(8.5px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: transparent;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.username input{
+   
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    height: 10px;
+
+}
+.password input{
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    height: 10px;
+}
+button{
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: #09ad6e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 260px;
+}
+button:hover{
+    background-color: #54b8c5;
+}
+.remember input{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.remember label{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
 }
 h1{
-    font-size: 2.5em;
-    font-weight: 700;
     color: white;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 20px;
     text-align: center;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+.form:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
 }
